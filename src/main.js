@@ -10,3 +10,5 @@ app.use(router);
 app.mount("#app");
 app.use(VueApexCharts);
 app.component("apexchart", VueApexCharts);
+
+

@@ -1,15 +1,19 @@
 import { createRouter, createWebHistory } from "vue-router";
-import LoginForm from "./components/LoginForm.vue";
-import DashboardPage from "./components/pages/DashboardPage.vue";
-import Sponsors from "./components/pages/Sponsors.vue";
-import Students from "./components/pages/students.vue";
+import BlogDetail from "./components/pages/BlogDetail.vue";
+import BlogList from "./components/pages/BlogList.vue";
+import Home from "./components/pages/Home.vue";
+import Toolbar from "./components/Toolbar.vue";
+
+
+
 
 const routes = [
-  { path: "/", redirect: "/loginform" },
-  { path: "/loginform", component: LoginForm },
-  { path: "/dashboardpage", component: DashboardPage },
-  { path: "/sponsors", component: Sponsors },
-  { path: "/students", component: Students },
+
+  { path: '/', component: Toolbar },
+  { path: '/Home', component: Home },
+  { path: '/BlogList', component: BlogList },
+  { path: '/BlogDetail', component: BlogDetail },
+  
 ];
 
 const router = createRouter({
